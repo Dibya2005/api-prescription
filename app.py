@@ -8,7 +8,13 @@ from PIL import Image
 from paddleocr import PaddleOCR
 
 app = Flask(__name__)
-ocr = PaddleOCR(use_angle_cls=False, lang='en')  # 'en' for English, can change to 'en+hi' etc.
+ocr = PaddleOCR(
+    use_angle_cls=False,
+    lang='en',
+    show_log=False,         # Avoid showing detection log
+    use_space_char=True     # Avoids issues with layout modules
+)
+  # 'en' for English, can change to 'en+hi' etc.
 
 def is_valid_prescription(text):
     text = text.lower()
