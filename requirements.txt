@@ -6,3 +6,5 @@ pdf2image
 pillow
 filetype
 numpy
+paddlex
+
