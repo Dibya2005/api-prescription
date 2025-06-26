@@ -1,6 +1,6 @@
 flask
 paddleocr
-paddlepaddle==2.5.0  # or another stable version compatible with Python 3.10
+paddlepaddle
 pdf2image
 pillow
 filetype
