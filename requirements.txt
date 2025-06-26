@@ -1,0 +1,7 @@
+flask
+paddleocr
+paddlepaddle==2.5.0  # or another stable version compatible with Python 3.10
+pdf2image
+pillow
+filetype
+numpy
